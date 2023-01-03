@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Validación tarjeta de crédito</title>
+   
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+  
+
+ <div class="container">
+
+  <div><img src="logo2.jpeg"></div>
+
+  <form action="">
+        
+        <div class="inputBox"> 
+          <label>Número de tarjeta </label>
+          <input type="number"  id="cardNum" maxlength="18" minlength="13">
+        </div>
+
+        <div class="inputBox"> 
+          <label>Nombre completo </label>
+          <input type="text" id="cardName" required="" pattern="[a-zA-Z]+" >
+        </div>
+ 
+      <button type="submit" id="submitbutton" >VALIDAR</button>
+
+    </form>
+
+  </div>
+   
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
