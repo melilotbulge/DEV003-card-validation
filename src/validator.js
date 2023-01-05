@@ -30,7 +30,7 @@ const validator = {
   },
 
   maskify: function (cardNum) {
-    const cNumArr = Array.from(cardNum, Number);
+    const cNumArr = Array.from(cardNum);
     const size = cNumArr.length;
     let rMask = "";
     for (let i = 0; i <size; i++) {
