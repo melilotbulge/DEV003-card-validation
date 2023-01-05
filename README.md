@@ -43,7 +43,7 @@ la suma de sus dígitos finales es un múltiplo de 10.
 ## 3. Consideraciones técnicas
 
 
-La lógica del proyecto se implementó completamente en JavaScript. Eneste proyecto no se utilziaron librerías 
+La lógica del proyecto se implementó completamente en JavaScript. En este proyecto no se utilziaron librerías 
 o frameworks, solo JavaScript puro también conocido como Vanilla JavaScript.
 
 Los tests unitarios cumplieron con el 100% de _statements_, _functions_, _lines_, y e _branches_.
@@ -51,9 +51,8 @@ Los tests unitarios cumplieron con el 100% de _statements_, _functions_, _lines_
 
 ## 4. Descripción de scripts / archivos
 
-* `README.md`: debe explicar la información necesaria para el uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
+* `README.md`: Se explica la información necesaria para el uso de tu aplicación
+  web, así como una introducción a la aplicación y su funcionalidad. 
 * `src/index.html`: este es el punto de entrada a la aplicación. Este archivo
  contiene el _markup_ (HTML),  el CSS y JavaScript necesario.
 * `src/style.css`: este archivo contiene las reglas de estilo. 
@@ -61,9 +60,9 @@ Los tests unitarios cumplieron con el 100% de _statements_, _functions_, _lines_
   métodos:
   - `validator.isValid(cardNumber)`:  Esta función retorna
      un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
-  - `validator.maskify(cardNumber)`: `cardNumber` es un `array` con el número de tarjeta y esta función
-   retorn un `string` donde todos menos los últimos cuatro caracteres sean reemplazados por un numeral (`#`).
-   Esta función mantiene los últimos cuatro caracteres intactos, aún cuando el `array` sea de menor longitud.
+  - `validator.maskify(cardNumber)`: Esta función retorna en un cuadro de alerta el numero de TARJETA en donde todos menos 
+   los últimos cuatro caracteres sean reemplazados por un numeral (`#`). Esta función mantiene los últimos cuatro caracteres
+  intactos, sea cual sea la longitud del número de tarjeta.
 
 * `src/index.js`: Aqui se invocan los elementos del DOM
   `validator.isValid()` y `validator.maskify()` según sea necesario y
